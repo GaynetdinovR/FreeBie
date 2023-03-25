@@ -1,0 +1,62 @@
+.quotes
+    padding: 110px 270px 180px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $bg-grey
+
+    &__info
+        width: 340px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+    &__title-h6
+        margin-top: 30px
+        align-self: flex-start
+
+    &__title-h2
+        margin-top: 30px
+        width: 340px
+
+    &__text
+        margin-top: 15px
+
+    &__carousel
+        margin-left: 130px
+        position: relative
+
+    &__carousel .flex
+        display: flex
+
+    &__item
+        width: 420px
+        padding: 40px 60px 50px
+        background-color: $white
+        border: 1px solid rgba($black, 0.1)
+        border-radius: 3px
+        position: relative
+        display: none
+
+    &__carousel-dots
+        position: absolute
+        bottom: -70px
+        left: 50%
+        transform: translateX(-50%)
+
+    &__item-text
+
+    &__item-author
+        position: absolute
+        left: 50% 
+        transform: translateX(-50%)
+        bottom: -30px
+        width: 60px
+        height: 60px
+
+    &__item-author-img
+        width: 100%
+        height: auto
+        object-fit: cover
+        border-radius: 50%

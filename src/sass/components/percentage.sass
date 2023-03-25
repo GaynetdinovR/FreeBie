@@ -1,0 +1,38 @@
+.percentage
+    display: flex
+
+    &__left-side, &__right-side
+        width: 50%
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+        padding: 60px 90px
+
+    &__left-side
+        background-color: $bg-blue
+        align-items: flex-end
+
+    &__right-side
+        background-color: $bg-grey
+        align-items: flex-start
+
+    &__icon
+        width: 70px
+        height: 70px
+
+    &__icon-img
+        width: 100%
+        obejct-fit: contain
+
+    &__title
+        margin-top: 30px
+
+    &__text
+        margin-top: 30px
+        max-width: 250px
+
+    &__rigth-side &__text
+        text-align: left
+
+    &__left-side &__text
+        text-align: right
