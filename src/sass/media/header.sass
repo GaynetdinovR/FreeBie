@@ -1,0 +1,23 @@
+@media (min-width: calc($desktop-size-s1 - 25px)) and (max-width: $desktop-size-m3)
+    .header
+        padding: 15px 15px
+    .header__social 
+        margin-right: 20px
+
+@media (min-width: $tablet-size-s2) and (max-width: $tablet-size-l1)
+    .header__right-side
+        display: none
+    .header
+        padding: 15px 15px
+        justify-content: center
+
+@media screen and (max-width: $tablet-size-s2)
+    .header__right-side,
+    .header__nav
+        display: none
+    
+    .header
+        justify-content: center
+
+    .header__menu-button
+        display: block

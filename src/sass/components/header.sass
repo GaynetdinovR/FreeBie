@@ -1,0 +1,62 @@
+.header
+    padding: 30px 120px
+    max-width: 1980px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 auto
+
+    &__logo
+        margin-right: 50px
+
+    &__social
+        margin-right: 50px
+
+    &__left-side,
+    &__right-side
+        display: flex
+
+    &__menu-button
+        display: none
+        cursor: pointer
+        background-color: transparent
+        border: none
+        padding: 0
+        
+        & div
+            width: 35px
+            height: 5px
+            background-color: #333
+            margin: 6px 0
+            transition: 0.4s
+
+        & div:first-child
+            margin: 0
+
+        &--change
+            height: 32px
+
+        &--change div:nth-child(1)
+            transform: translate(0, 6px) rotate(-45deg)
+
+        &--change div:nth-child(2)
+            display: none
+
+        &--change div:nth-child(3)
+            transform: translate(0, -6px) rotate(45deg)
+
+    &__menu
+        position: absolute
+        left: 0
+        top: 90px
+        padding: 50px 30px 
+        width: 100%
+        border-radius: 0 0 5px 0
+        background-color: $bg-light-grey
+        border: 1px solid rgba($black, 0.2)
+        & .nav__list
+            flex-direction: column
+            align-items: flex-start
+
+            & .nav__item
+                margin: 10px 0
