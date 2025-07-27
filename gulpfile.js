@@ -136,4 +136,6 @@ exports.html = html;
 exports.img = img;
 exports.svg = svg;
 exports.scripts = scripts;
+
+exports.build = parallel(fonts, html, svg, img, styles, scripts);
 exports.default = parallel(fonts, html, svg, img, styles, scripts, browsersync, startwatch);
